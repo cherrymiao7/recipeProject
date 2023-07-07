@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox fx:id="hv_VBox" alignment="CENTER" prefHeight="320.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.recipeproject.HomeController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label fx:id="hvTitleLabel" text="Label" />
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="hvSearchInputTextField" prefHeight="30.0" prefWidth="220.0" />
+                <Button fx:id="hvSearchButton" onAction="#searchButtonClicked" text="Search" />
+            </children>
+        </HBox>
+        <SplitMenuButton id="HVSelectSMB" mnemonicParsing="false" text="SelectTypes">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Vegetable" />
+                <MenuItem mnemonicParsing="false" text="Meat" />
+                <MenuItem mnemonicParsing="false" text="Seafood" />
+                <MenuItem mnemonicParsing="false" text="Fruit" />
+                <MenuItem mnemonicParsing="false" text="Drinks" />
+            </items>
+        </SplitMenuButton>
+
+        <Label fx:id="welcomeText" />
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button id="HVCreateNewButton" onAction="#createButtonClicked" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Create">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </Button>
+                <Button id="HVExitButton" onAction="#exitButtonClicked" contentDisplay="CENTER" mnemonicParsing="false" text="Exit">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.collections.FXCollections?>
+<VBox fx:id="sv_VBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.recipeproject.SearchController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="svSearchInputTextField" />
+                <Button fx:id="svSearchButton" mnemonicParsing="false" onAction="#searchButtonClicked" text="Search" />
+                <StackPane fx:id="svButtonStackPane" maxWidth="130" minWidth="130" styleClass="dropdown-button">
+                    <children>
+                        <Label styleClass="text" text="category" />
+                    </children>
+                </StackPane>
+            </children>
+        </HBox>
+        <ListView fx:id="svShowResultListView" onMouseClicked="#recipeClicked" prefHeight="297.0" prefWidth="600.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+                <Button fx:id="svCreateButton" mnemonicParsing="false" onAction="#createButton" text="Create">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin></Button>
+            <Button fx:id="svExitButton" mnemonicParsing="false" onAction="#ExitButton" text="Exit">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+    </children>
+</VBox>

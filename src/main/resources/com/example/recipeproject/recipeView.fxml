@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="rv_Vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.recipeproject.ShowRecipeController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="100.0" prefWidth="404.0">
+                    <children>
+                        <Label fx:id="rvRecipeTitle" prefHeight="95.0" prefWidth="163.0" text="RecipeTitle">
+                            <font>
+                                <Font size="26.0" />
+                            </font>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Serve: " />
+                                <TextField fx:id="rvServeCountTextField" prefHeight="30.0" prefWidth="52.0" />
+                                <Label text="PrepTime: " />
+                                <Label fx:id="rvPrepTimeLabel" text="Label" />
+                        <Label text="min" />
+                                <Label text="CookTime:" />
+                                <Label fx:id="rvCookTimeLabel" text="Label" />
+                        <Label text="min" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="100.0" prefWidth="186.0" />
+            </children>
+        </HBox>
+        <HBox prefHeight="222.0" prefWidth="670.0">
+            <children>
+                <VBox prefHeight="100.0" prefWidth="396.0">
+                    <children>
+                        <Label text="Ingredients:" />
+                        <TableView fx:id="rvIngredientTableView" prefHeight="147.0" prefWidth="396.0">
+                        </TableView>
+                    </children>
+                </VBox>
+                <VBox prefHeight="165.0" prefWidth="198.0">
+                   <children>
+                       <HBox>
+                          <children>
+                              <Label text="Type:" />
+                              <Label fx:id="rvTypeLabel" text="Label" />
+                          </children>
+                       </HBox>
+                       <ImageView fx:id="rvImageView" fitHeight="139.0" fitWidth="203.0" pickOnBounds="true">
+                            <image>
+<!--                                <Image url="@../../../../../../img1/recipe1.png" />-->
+                            </image>
+                        </ImageView>
+                   </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Label text="Steps:" />
+        <TextArea fx:id="rvStepTextArea" editable="false" prefHeight="198.0" prefWidth="600.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+                  <Button fx:id="rvEditButton" mnemonicParsing="false" onAction="#editButtonClicked" text="Edit">
+               <HBox.margin>
+                  <Insets right="70.0" />
+               </HBox.margin></Button>
+                  <Button fx:id="rvDeleteButton" mnemonicParsing="false" onAction="#deleteButtonClicked" text="Delete">
+               <HBox.margin>
+                  <Insets left="70.0" right="70.0" />
+               </HBox.margin></Button>
+                  <Button fx:id="rvReturnButton" mnemonicParsing="false" onAction="#returnButtonClicked" text="Return">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+    </children>
+</VBox>

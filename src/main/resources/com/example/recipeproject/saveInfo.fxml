@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="217.0" prefWidth="351.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.recipeproject.SaveInfoController">
+    <Label layoutX="16.0" layoutY="69.0" text="Save this recipe?" />
+    <Button fx:id="saveYesButton" onAction="#saveYesButtonClicked" layoutX="94.0" layoutY="139.0" mnemonicParsing="false" text="Yes" />
+    <Button fx:id="saveNoButton" onAction="#saveNoButtonClicked" layoutX="224.0" layoutY="139.0" mnemonicParsing="false" text="No" />
+</VBox>

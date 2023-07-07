@@ -1,0 +1,17 @@
+.button {
+    -fx-background-color: rgb(215, 131, 117);
+    -fx-background-radius: 30;
+}
+
+.button:hover {
+    -fx-background-color: rgb(254, 211, 177);
+}
+
+.root {
+    -fx-background-color: rgb(254, 211, 177);
+    -fx-background-image: url("background.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
